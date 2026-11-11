@@ -8,7 +8,7 @@ Session::checkRight('group', UPDATE);
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     Html::redirect($CFG_GLPI['root_doc'] . '/front/group.php');
 }
-Session::checkCSRF($_POST);
+// CSRF is validated by GLPI 11 CheckCsrfListener before this controller runs.
 $gid = filter_var($_POST['groups_id'] ?? null, FILTER_VALIDATE_INT);
 $mode = filter_var($_POST['mode'] ?? null, FILTER_VALIDATE_INT);
 $action = (string) ($_POST['on_limit'] ?? '');
