@@ -1,6 +1,6 @@
 # Single Technician by Group v0.3.1 — GLPI 11
 
-## Regra operacional SES-DF
+## Regra operacional
 - O **Escalade** controla a troca de grupos e a remoção de grupos técnicos anteriores. Este plugin **não adiciona, altera nem remove grupos**.
 - Ao incluir um **técnico** (`Ticket_User`, type = ASSIGN), consulta os grupos **atualmente atribuídos** (`glpi_groups_tickets`, type = ASSIGN).
 - **Exatamente um grupo técnico**: consulta exclusivamente a política desse grupo, independentemente dos grupos de que o técnico é membro.
