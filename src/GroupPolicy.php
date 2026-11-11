@@ -12,6 +12,11 @@ class GroupPolicy extends CommonDBTM
 {
     public static $rightname = 'group';
 
+    public static function getIcon()
+    {
+        return 'ti ti-users-group';
+    }
+
     public static function getTypeName($nb = 0): string
     {
         return 'Política de atribuição';
