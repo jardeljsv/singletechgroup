@@ -1,0 +1,8 @@
+{
+  "name": "mundoitsm/singletechgroup",
+  "description": "Limites de tecnicos por grupo tecnico para GLPI 11",
+  "type": "glpi-plugin",
+  "license": "GPL-3.0-or-later",
+  "require": {"php": ">=8.2"},
+  "autoload": {"psr-4": {"GlpiPlugin\\Singletechgroup\\": "src/"}}
+}
