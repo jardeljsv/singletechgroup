@@ -10,7 +10,7 @@ use Session;
 /** A single per-group tab. Never renders the global group list. */
 class GroupPolicy extends CommonDBTM
 {
-    public static string $rightname = 'group';
+    public static $rightname = 'group';
 
     public static function getTypeName($nb = 0): string
     {
